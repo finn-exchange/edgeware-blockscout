@@ -1,0 +1,18 @@
+<title>
+  <%= gettext("Edgeware | EVM Explorer") %>
+</title>
+
+<meta name="description" content="<%= gettext "Find the latest blocks and transactions with Edgeware Explorer to find the price, average block time, total transactions, total blocks, wallet addresses and more." %>">
+<link rel="canonical" href="https://evm.edgscan.live">
+
+<meta name="og:title" content="<%= gettext "Edgeware | EVM Explorer" %>">
+<meta name="og:description" content="<%= gettext "Find the latest blocks and transactions with Edgeware Explorer to find the price, average block time, total transactions, total blocks, wallet addresses and more." %>">
+<meta name="og:type" content="website">
+<meta name="og:image" content="https://evm.edgscan.live/images/og-image.png">
+<meta name="og:url" content="https://evm.edgscan.live">
+
+<meta name="twitter:card" content="website">
+<meta name="twitter:site" content="@cryptocom">
+<meta name="twitter:title" content="<%= gettext "Edgeware | EVM Explorer" %>">
+<meta name="twitter:description" content="<%= gettext "Find the latest blocks and transactions with Edgeware Explorer to find the price, average block time, total transactions, total blocks, wallet addresses and more." %>">
+<meta name="twitter:image" content="https://evm.edgscan.live/images/og-image.png">

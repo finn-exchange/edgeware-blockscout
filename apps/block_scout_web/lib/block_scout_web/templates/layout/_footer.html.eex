@@ -1,0 +1,62 @@
+<footer class="footer">
+  <div class="footer-body container">
+    <!-- Logo -->
+    <div class="row footer-logo-row">
+      <div class="col-md-12">
+        <%= link to: webapp_url(@conn), class: "footer-brand" do %>
+          <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
+          <%= if logo_text() do %>
+            <span class="logo-text in-footer"> <%= logo_text() %> </span>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <% other_explorers = other_explorers() %>
+    <% col_size = if Enum.empty?(other_explorers), do: 3, else: 2 %>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-3">
+        <p class="footer-info-text">
+          <%= gettext("Copyright © 2022 Edgscan. All rights reserved.")%>
+          <a href="https://finn.exchange" rel="noreferrer" class="footer-link" target="_blank"><%= gettext(" Made with love by Finn Exchange.") %></a>
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://github.com/orgs/Edgeware-Network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/HeyEdgeware" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://t.me/heyedgeware" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a href="https://discord.com/invite/bDktqyj" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Discord") %>'>
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <h3><%= gettext("Explorer") %></h3>
+        <ul>
+          <li><a href="/" rel="noreferrer" class="footer-link"><%= gettext("Home") %></a></li>
+          <li><a href="/blocks" rel="noreferrer" class="footer-link"><%= gettext("Blocks") %></a></li>
+          <li><a href="/txs" rel="noreferrer" class="footer-link"><%= gettext("Transactions") %></a></li>
+          <li><a href="/accounts" rel="noreferrer" class="footer-link"><%= gettext("Accounts") %></a></li>
+          <li><a href="/tokens" rel="noreferrer" class="footer-link"><%= gettext("Tokens") %></a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <h3><%= gettext("Resources") %></h3>
+        <ul>
+          <li><a href="https://edgewa.re/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Edgeware Website") %></a></li>
+          <li><a href="https://docs.edgeware.wiki/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Documentation") %></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</footer>

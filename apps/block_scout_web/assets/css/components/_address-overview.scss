@@ -1,0 +1,113 @@
+.address-detail-hash-title {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  word-break: break-all;
+}
+
+.overview-title-buttons {
+  display: flex;
+
+  .official-token-icon {
+    background-color: #7DD79F;
+    border-color: #7DD79F;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #333333;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 4px 0 rgba(202, 199, 226, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.overview-title-item {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: fit-content;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.address-overview {
+  .card-section {
+    margin-bottom: $common-container-margin;
+
+    &:first-child {
+
+      .card {
+        margin-right: $common-container-margin;
+
+        @include media-breakpoint-down(md) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .card {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.balance-card-title {
+  margin-bottom: 0.5rem;
+}
+
+.address-detail-item {
+  margin-right: 1em;
+  padding-bottom: 0.5em;
+}
+
+.address-balance-text {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address-current-balance {
+  line-height: 1.2;
+  margin: 0 0 12px;
+  font-weight: 400;
+
+  small {
+    font-size: 11px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.logs-decoded {
+  line-height: 25px!important;
+}
+
+.address-warn {
+  background-color: #f8dad7;
+  border-color: #f6cbc7;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1e2022;
+  padding: 0.75rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px 0 rgba(202, 199, 226, 0.5);
+}
